@@ -78,7 +78,8 @@ body {
 		</style>
 		<link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
 <link rel="apple-touch-icon" href="index.apple-touch-icon.png"/>
-
+<link rel="manifest" href="index.manifest.json">
+<meta name='apple-mobile-web-app-capable' content='yes'><meta name='mobile-web-app-capable' content='yes'><script>(function(){var go=function(){var d=document,e=d.documentElement;if(!matchMedia('(pointer:coarse)').matches)return;if(d.fullscreenElement||d.webkitFullscreenElement)return;var r=e.requestFullscreen||e.webkitRequestFullscreen;if(!r)return;try{Promise.resolve(r.call(e,{navigationUI:'hide'})).then(function(){if(screen.orientation&&screen.orientation.lock){screen.orientation.lock('landscape').catch(function(){});}}).catch(function(){});}catch(x){}};document.addEventListener('touchend',go,{passive:true});})();</script>
 	</head>
 	<body>
 		<canvas id="canvas">
@@ -97,7 +98,7 @@ body {
 
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":14632176,"index.wasm":35376909},"focusCanvas":true,"gdextensionLibs":[]};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"ensureCrossOriginIsolationHeaders":false,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":14632176,"index.wasm":35376909},"focusCanvas":true,"gdextensionLibs":[],"serviceWorker":"index.service.worker.js"};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
